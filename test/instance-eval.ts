@@ -17,16 +17,9 @@ describe("MSM", function () {
 
     await instanceEval.deployed()
 
-    const scalars = ["0x1", "0x2", "0x3"];
+    const scalars = ["0xfc", "0xfc"];
 
-    const res = await instanceEval.eval_at_g_lagrange(scalars);
-
-
-    // const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
-
-    // // wait until the transaction is mined
-    // await setGreetingTx.wait();
-
-    // expect(await greeter.greet()).to.equal("Hola, mundo!");
+    const {x, y} = await instanceEval.evalAtOmegaLagrange(scalars);
+    console.log(x, y);
   });
 });

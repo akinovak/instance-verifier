@@ -6,9 +6,9 @@ import {BN254} from "./BN254.sol";
 
 contract InstanceEval is Constants {
   using BN254 for *;
-  function eval_at_g_lagrange(uint256[] memory _scalars)
-  view
+  function evalAtOmegaLagrange(uint256[] memory _scalars)
   public
+  view
   returns (uint256 x, uint256 y)
   {
     return BN254.multiScalarMul(G_LAGRANGE, _scalars);
