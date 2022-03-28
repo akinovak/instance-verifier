@@ -9,7 +9,7 @@ import { resolve } from "path"
 import "solidity-coverage"
 import { config } from "./package.json"
 import "./tasks/deploy-greeter"
-import "./tasks/deploy-instance-eval"
+import "./tasks/deploy-instance-verifier"
 
 dotenvConfig({ path: resolve(__dirname, "./.env") })
 

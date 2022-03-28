@@ -5,7 +5,7 @@
     "start": "hardhat node",
     "compile": "hardhat compile",
     "deploy:greeter": "hardhat deploy:greeter",
-    "deploy:ieval": "hardhat deploy:ieval",
+    "deploy:verifier": "hardhat deploy:verifier",
     "test": "hardhat test",
     "test:report-gas": "REPORT_GAS=true hardhat test",
     "test:coverage": "hardhat coverage",
